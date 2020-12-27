@@ -19,7 +19,17 @@ public class Main {
              "Tomato", "Onion", "Grape", "Potato", "Leek", "Kiwi", "Cucumber", "Eggplant",  "Pumpkin", "Apple");
         System.out.println(fruitsAndVeges);
         System.out.println("Unique words: " + toGetUniqWords(fruitsAndVeges));
+
+        PhoneBook pb = new PhoneBook();
+        pb.add("Orlov", "78987563");
+        pb.add("Orlov", "098712345");
+        pb.add("Kurochkin", "007070707");
+        pb.printInfo();
+        System.out.println(pb.get("Orlov"));
+        System.out.println(pb.get("Kurochkin"));
     }
+
+
 
     public static Map<String, Integer> toGetUniqWords(List<String> arr)
     {
